@@ -2,10 +2,9 @@ import random
 dice_rolls = int(input('How many dice would you like to roll? '))
 dice_size = int(input('How many sides are the dice? '))
 dice_sum = 0
-for i in range(0,dice_rolls):
+for i in range(1,dice_rolls):
  def main():
-  roll = random.randint(1,dice_size)
-  dice_sum += roll  
+  roll = random.randint(1,dice_size)  
   if roll == 1:
     print(f'you rolled a {roll}! Critical Fail')
   elif roll == dice_size:
